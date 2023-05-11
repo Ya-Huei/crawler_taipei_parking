@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d89e65b02efddb1f5caae389c4f6aa5e7d9d9bca03746e9438684b3df0351814"
+            "sha256": "75550de3bc9d282df64a7ac0f75c8bd2f285a4c8db21b1bd21157bed930684bd"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -689,6 +689,14 @@
             "index": "pypi",
             "version": "==2.8.2"
         },
+        "python-dotenv": {
+            "hashes": [
+                "sha256:a8df96034aae6d2d50a4ebe8216326c61c3eb64836776504fcca410e5937a3ba",
+                "sha256:f5971a9226b701070a4bf2c38c89e5a3f0d64de8debda981d1db98583009122a"
+            ],
+            "markers": "python_version >= '3.8'",
+            "version": "==1.0.0"
+        },
         "pytz": {
             "hashes": [
                 "sha256:1d8ce29db189191fb55338ee6d0387d82ab59f3d00eac103412d64e0ebd0c588",
@@ -826,6 +834,14 @@
             "index": "pypi",
             "version": "==6.3.1"
         },
+        "tqdm": {
+            "hashes": [
+                "sha256:1871fb68a86b8fb3b59ca4cdd3dcccbc7e6d613eeed31f4c332531977b89beb5",
+                "sha256:c4f53a17fe37e132815abceec022631be8ffe1b9381c2e6e30aa70edc99e9671"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==4.65.0"
+        },
         "trio": {
             "hashes": [
                 "sha256:ce68f1c5400a47b137c5a4de72c7c901bd4e7a24fbdebfe9b41de8c6c04eaacf",
@@ -867,7 +883,6 @@
             "version": "==4.3"
         },
         "urllib3": {
-            "extras": [],
             "hashes": [
                 "sha256:61717a1095d7e155cdb737ac7bb2f4324a858a1e2e6466f6d03ff630ca68d3cc",
                 "sha256:d055c2f9d38dc53c808f6fdc8eab7360b6fdbbde02340ed25cfbcd817c62469e"
@@ -881,6 +896,14 @@
             ],
             "index": "pypi",
             "version": "==0.20.0"
+        },
+        "webdriver-manager": {
+            "hashes": [
+                "sha256:7d3aa8d67bd6c92a5d25f4abd75eea2c6dd24ea6617bff986f502280903a0e2b",
+                "sha256:ee788d389b8f45222a8a62f6f39b579360a1f87be46dad6da89918354af3ce73"
+            ],
+            "index": "pypi",
+            "version": "==3.8.6"
         },
         "wsproto": {
             "hashes": [
