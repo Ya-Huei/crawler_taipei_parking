@@ -10,8 +10,6 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
 
 from validateCode import downloadValidateCode, getValidateCode
 from userAgent import user_agents
@@ -19,16 +17,13 @@ from userAgent import user_agents
 headers = {
     "User-Agent": random.choice(user_agents)
 }
-def get_driver(options):
-    return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
 def startCrawler(search_data_array):
     options = Options()
     options.add_argument('--headless')
     options.add_argument('--window-size=1920x1080')
                      
-    # web_driver = webdriver.Chrome()
-    web_driver = get_driver(options)
+    web_driver = webdriver.Chrome(options=options)
     web_driver.get("https://parkingfee.pma.gov.taipei/")
 
     request_session = requests.session()
