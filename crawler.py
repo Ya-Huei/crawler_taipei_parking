@@ -21,9 +21,11 @@ headers = {
 }
 
 def startCrawler(search_data_array):
+    print('start crawler....')
+    
     options = Options()
-    options.add_argument('--headless')
-    options.add_argument('--window-size=1920x1080')
+    # options.add_argument('--headless')
+    # options.add_argument('--window-size=1920x1080')
                      
     web_driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
     web_driver.get("https://parkingfee.pma.gov.taipei/")
