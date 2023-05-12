@@ -9,9 +9,6 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
 
 from validateCode import downloadValidateCode, getValidateCode
 from userAgent import user_agents
@@ -23,11 +20,11 @@ headers = {
 def startCrawler(search_data_array):
     print('start crawler....')
     
-    options = Options()
-    # options.add_argument('--headless')
-    # options.add_argument('--window-size=1920x1080')
+    options = webdriver.ChromeOptions()
+    options.add_argument('--headless')
+    options.add_argument('--window-size=1920x1080')
                      
-    web_driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    web_driver = webdriver.Chrome(chrome_options=options)
     web_driver.get("https://parkingfee.pma.gov.taipei/")
 
     request_session = requests.session()
